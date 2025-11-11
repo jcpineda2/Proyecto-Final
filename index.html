@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./assets/js/main.js"></script>
 </head>
+
 <body>
-    <header class="bg-gray-900 shadow-md sticky top-0 z-50 h-20 w-auto flex ">
-        <nav>
-            <ul class="text-white">
-                <li><a href="">Logo</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Contactos</a></li>
-                <li><a href="">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
+    <header class="bg-gray-900 shadow-md sticky top-0 z-50  ">
+        <div class="flex justify-between items-center h-16">
+            <div>Logo</div>
+            <nav class=" text-white space-x-8 hidden md:flex">
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+            <button class="bg-[#f9fafb] mr-20 px-3 py-2 border rounded-lg">
+                <a href="">Iniciar Sesión</a>
+            </button>
+        </div>
     </header>
     <main>
 
@@ -26,4 +30,5 @@
 
     </footer>
 </body>
+
 </html>
