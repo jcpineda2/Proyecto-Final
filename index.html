@@ -9,19 +9,21 @@
     <script type="module" src="./assets/js/main.js"></script>
 </head>
 
-<body>
+<body class="bg-white">
     <header class="bg-[#031926] shadow-md sticky top-0 z-50  ">
-        <div class="flex justify-between items-center h-16">
-            <div class="text-white ml-16">Logo</div>
-            <nav class=" text-white space-x-8 hidden md:flex">
-                <a href="#servicios" class="hover:text-[#C9A043]">Servicios</a>
-                <a href="#nosotros" class="hover:text-[#C9A043]">Nosotros</a>
-                <a href="#contactos" class="hover:text-[#C9A043]">Contactos</a>
-            </nav>
-            <button class="bg-[#C9A043] hover:bg-[#ae8b3a] mr-20 px-3 py-2 border rounded-lg">
-                <a href="">Iniciar Sesión</a>
+        <nav class="flex justify-between items-center h-16 px-8 md:px-16">
+            <div class="text-white text-2xl font-bold">
+                <a href="#inicio">Logo</a>
+            </div>
+            <ul class=" text-white space-x-8 hidden md:flex">
+                <li><a href="#servicios" class="hover:text-[#C9A043]">Servicios</a></li>
+                <li><a href="#nosotros" class="hover:text-[#C9A043]">Nosotros</a></li>
+                <li><a href="#contactos" class="hover:text-[#C9A043]">Contactos</a></li>
+            </ul>
+            <button class="bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 border rounded-lg font-semibold transition">
+                <a href="#login">Iniciar Sesión</a>
             </button>
-        </div>
+        </nav>
     </header>
     <main>
         <section class=" bg-[#070a10] py-24  items-center text-center text-black leading-tight">
@@ -72,11 +74,13 @@
         </section>
         <section class="bg-white grid grid-cols-2 h-96 px-20">
             <div class="h-full w-96 mx-auto">
-                <img src="assets/img/expertos.png" alt="Equipo de Expertos" class="border rounded-3xl object-cover h-full w-full">
+                <img src="assets/img/expertos.png" alt="Equipo de Expertos"
+                    class="border rounded-3xl object-cover h-full w-full">
             </div>
             <div class="my-4 text-center">
                 <h2 class="text-4xl font-bold text-left">Mas allá de la tecnología: La experiencia de la confianza</h2>
-                <p class="my-5 text-left">En seguridad proactiva, entendemos que la ciberseguridad no es solo un costo, sino una "Inversión
+                <p class="my-5 text-left">En seguridad proactiva, entendemos que la ciberseguridad no es solo un costo,
+                    sino una "Inversión
                     esencial". Nuestro equipo
                     está formado por ingenieros y expertos en seguridad con años de experiencia en la protección de
                     infraestructuras críticas.
@@ -134,11 +138,13 @@
                     <span>— Gerente de TI, [Empresa A]</span>
                 </article>
                 <article>
-                    <p>"La auditoría de *pentesting* nos descubrió fallas críticas que creíamos tener cubiertas. Un servicio exhaustivo."</p>
+                    <p>"La auditoría de *pentesting* nos descubrió fallas críticas que creíamos tener cubiertas. Un
+                        servicio exhaustivo."</p>
                     <span>— CTO, [Empresa B]</span>
                 </article>
                 <article>
-                    <p>"Una solución de seguridad gestionada que realmente nos permite enfocarnos en nuestro negocio."</p>
+                    <p>"Una solución de seguridad gestionada que realmente nos permite enfocarnos en nuestro negocio."
+                    </p>
                     <span>— CEO, [Empresa C]</span>
                 </article>
             </div>
@@ -156,7 +162,8 @@
             </div>
             <div>
                 <h2>Alerta de Amenazas</h2>
-                <p>Suscríbete a nuestro boletín para recibir alertas de vulnerabilidades críticas y noticias de seguridad.</p>
+                <p>Suscríbete a nuestro boletín para recibir alertas de vulnerabilidades críticas y noticias de
+                    seguridad.</p>
                 <form action="">
                     <input type="email" placeholder="Tú email">
                     <button>Suscríbete</button>
