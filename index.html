@@ -171,47 +171,63 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-3">
                 <article class="bg-[#f9fafb] p-8 rounded-xl shadow-lg border border-l-gray-800">
-                    <blockquote class="text-lg text-gray-700 mb-4 ">"Nuestra tasa de incidentes de <em>phishing</em> se redujo en un 75%. El soporte es
+                    <blockquote class="text-lg text-gray-700 mb-4 ">"Nuestra tasa de incidentes de <em>phishing</em> se
+                        redujo en un 75%. El soporte es
                         incomparable."
                     </blockquote>
-                    <footer class="text-gray-600 font-semibold" >— Gerente de TI, [Empresa A]</footer>
+                    <footer class="text-gray-600 font-semibold">— Gerente de TI, [Empresa A]</footer>
                 </article>
                 <article class="bg-[#f9fafb] p-8 rounded-xl shadow-lg border border-l-gray-800">
-                    <blockquote class="text-lg text-gray-700 mb-4 ">"La auditoría de <em>pentesting</em> nos descubrió fallas críticas que creíamos tener cubiertas. Un
+                    <blockquote class="text-lg text-gray-700 mb-4 ">"La auditoría de <em>pentesting</em> nos descubrió
+                        fallas críticas que creíamos tener cubiertas. Un
                         servicio exhaustivo."
                     </blockquote>
-                    <footer class="text-gray-600 font-semibold" >— CTO, [Empresa B]</footer>
+                    <footer class="text-gray-600 font-semibold">— CTO, [Empresa B]</footer>
                 </article>
                 <article class="bg-[#f9fafb] p-8 rounded-xl shadow-lg border border-l-gray-800">
-                    <blockquote class="text-lg text-gray-700 mb-4">"Una solución de seguridad gestionada que realmente nos permite enfocarnos en nuestro negocio."
+                    <blockquote class="text-lg text-gray-700 mb-4">"Una solución de seguridad gestionada que realmente
+                        nos permite enfocarnos en nuestro negocio."
                     </blockquote>
-                    <footer class="text-gray-600 font-semibold" >— CEO, [Empresa C]</footer>
+                    <footer class="text-gray-600 font-semibold">— CEO, [Empresa C]</footer>
                 </article>
             </div>
         </section>
     </main>
-    <footer class="bg-[#111827]">
-        <article>
-            <div>
-                <h2>Contáctanos</h2>
-                <p>
-                    Dirección: Calle Falsa 123, Ciudad, País <br>
-                    Teléfono: +123 456 7890 <br>
-                    Email:
-                </p>
+    <footer id="contacto" class="bg-[#111827] text-white py-16">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <section>
+                    <h3 class="text-2xl font-bold mb-4">Contáctanos</h3>
+                    <address class="text-gray-400 not-italic">
+                        Dirección: Calle Falsa 123, Ciudad, País<br>
+                        Teléfono: <a href="tel:+1234567890" class="hover:text-[#C9A043]">+123 456 7890</a><br>
+                        Email: <a href="mailto:info@ciberseguridad.com"
+                            class="hover:text-[#C9A043]">info@ciberseguridad.com</a>
+                    </address>
+                </section>
+
+                <section>
+                    <h3 class="text-2xl font-bold mb-4">Alerta de Amenazas</h3>
+                    <p class="text-gray-400 mb-4">
+                        Suscríbete a nuestro boletín para recibir alertas de vulnerabilidades críticas y noticias de
+                        seguridad.
+                    </p>
+                    <form class="flex gap-2">
+                        <input type="email" placeholder="Tu email" required
+                            class="flex-1 px-4 py-2 rounded-lg text-black">
+                        <button type="submit"
+                            class="bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 rounded-lg font-semibold transition">
+                            Suscríbete
+                        </button>
+                    </form>
+                </section>
             </div>
-            <div>
-                <h2>Alerta de Amenazas</h2>
-                <p>Suscríbete a nuestro boletín para recibir alertas de vulnerabilidades críticas y noticias de
-                    seguridad.</p>
-                <form action="">
-                    <input type="email" placeholder="Tú email">
-                    <button>Suscríbete</button>
-                </form>
+
+            <hr class="border-gray-700 mb-8">
+
+            <div class="text-center text-gray-400">
+                <p>&copy; 2024 Ciberseguridad Proactiva. Todos los derechos reservados.</p>
             </div>
-        </article>
-        <div>
-            <p>© 2024 Ciberseguridad Proactiva. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
