@@ -16,11 +16,11 @@ document.getElementById("btnLogin").addEventListener("click", async () => {
         modal.remove();
     })
     // Validar formulario al enviar
-    modal.querySelector("#loginForm").addEventListener("submit", (e) => {
+    modal.querySelector("#login").addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const email = modal.querySelector("#emailInput").value.trim();
-        const password = modal.querySelector("#passwordInput").value.trim();
+        const email = modal.querySelector("#email").value.trim();
+        const password = modal.querySelector("#password").value.trim();
         const errorMsg = modal.querySelector("#errorMsg");
 
         errorMsg.textContent = "";
