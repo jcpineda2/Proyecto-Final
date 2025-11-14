@@ -51,7 +51,16 @@ document.getElementById("btnLogin").addEventListener("click", async () => {
             return;
         }
 
-        console.log("Formulario válido:", { email, password });
+        //Elimina el modal una vez que los datos son enviados
+        modal.remove();
+        //Muestra mensaje de éxito
+        Swal.fire({
+            icon: 'success',
+            title: '¡Listo!',
+            text: 'Usted ha iniciado sesión'
+        });
+
     });
 
 })
+
