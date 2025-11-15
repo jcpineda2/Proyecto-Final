@@ -72,12 +72,45 @@ async function abrirModalLogin() {
 }
 
 //Funcion para mostrar mensaje de validación y mensaje de éxito del botón suscribir
-document.getElementById("suscripcion").addEventListener("click", async () => {
+document.getElementById("suscripcion").addEventListener("submit", (e) => {
+    // 1. Evitar que el formulario se envíe de forma predeterminada (recarga la página)
+    e.preventDefault();
+
+    const emailInput = e.target.querySelector('input[type="email"]');
+    const email = emailInput.value.trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+    if (!email) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor, ingresa tu email para suscribirte.',
+            confirmButtonColor: '#d33'
+        });
+        return; // Detiene la ejecución
+    }
+
+    // Validar formato de email
+    if (!emailRegex.test(email)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Email Inválido',
+            text: 'Ingresa un formato de email válido.',
+            confirmButtonColor: '#d33'
+        });
+        return; // Detiene la ejecución
+    }
+
     Swal.fire({
         icon: 'success',
-        title: '¡Listo!',
-        text: 'Usted se ha suscripto correctamente'
+        title: '¡Suscripción Exitosa!',
+        text: `El email "${email}" se ha suscrito correctamente.`,
+        confirmButtonColor: '#28a745'
     });
+
+    emailInput.value = '';
 });
 
 //función que oculta el botón movil
