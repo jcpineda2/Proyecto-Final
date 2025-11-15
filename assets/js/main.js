@@ -1,5 +1,12 @@
 //funcion para mostrar modal
-document.getElementById("btnLogin").addEventListener("click", async () => {
+document.querySelectorAll("#btnLogin, #btnLoginMobile").forEach(button => {
+    button.addEventListener("click", async () => {
+        abrirModalLogin();
+    });
+});
+
+
+async function abrirModalLogin() {
     const modal = document.createElement("div");
     modal.id = "modalLogin";
     modal.className = "fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]"
@@ -62,15 +69,25 @@ document.getElementById("btnLogin").addEventListener("click", async () => {
 
     });
 
-})
+}
 
 //Funcion para mostrar mensaje de validación y mensaje de éxito del botón suscribir
-document.getElementById("suscripcion").addEventListener("click" , async() =>{
-            Swal.fire({
-            icon: 'success',
-            title: '¡Listo!',
-            text: 'Usted se ha suscripto correctamente'
-        });
+document.getElementById("suscripcion").addEventListener("click", async () => {
+    Swal.fire({
+        icon: 'success',
+        title: '¡Listo!',
+        text: 'Usted se ha suscripto correctamente'
+    });
 });
 
 //función que oculta el botón movil
+
+const boton = document.querySelector('#btnMenu');
+const menu = document.querySelector('#contenedorMenu');
+
+function alternarMenu() {
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex')
+}
+
+boton.addEventListener('click', alternarMenu);

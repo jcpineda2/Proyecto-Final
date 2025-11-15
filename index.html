@@ -11,38 +11,48 @@
 </head>
 
 <body class="bg-white font-inter">
-    <header class="bg-[#031926]/90 backdrop-blur-md shadow-md sticky top-0 z-50  ">
-        <nav class="flex justify-between items-center h-16 px-8 md:px-16">
-            <div>
-                <a href="#inicio">
-                    <img src="assets/img/icono.png" alt="Ciberseguridad Proactiva" class="h-10 w-auto">
-                </a>
-            </div>
-            <ul class=" text-white space-x-8 hidden md:flex">
-                <li><a href="#servicios" class="hover:text-[#C9A043]">Servicios</a></li>
-                <li><a href="#nosotros" class="hover:text-[#C9A043]">Nosotros</a></li>
-                <li><a href="#contactos" class="hover:text-[#C9A043]">Contactos</a></li>
-            </ul>
-            <button id="btnLogin"
-                class="hidden md:block bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 border rounded-lg font-semibold transition">
-                Iniciar Sesión
-            </button>
-            <button id="btnMenu" class="md:hidden text-white text-3xl">
-                ☰
-            </button>
-        </nav>
+ <header class="bg-[#031926]/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+    <nav class="flex justify-between items-center h-16 px-8 md:px-16">
+        <a href="#inicio">
+            <img src="assets/img/icono.png" alt="Ciberseguridad Proactiva" class="h-10 w-auto">
+        </a>
 
-        <nav id="contenedorMenu" class="hidden sm:hidden z-82  flex-col border border-gray-800 p-5">
-            <a href="#" class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Inicio</a>
-            <a href="#"
-                class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Características</a>
-            <a href="#"
-                class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Documentación</a>
-            <a href="#"
-                class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">Comprar
-                Ahora</a>
-        </nav>
-    </header>
+        <ul class="text-white space-x-8 hidden md:flex">
+            <li><a href="#servicios" class="hover:text-[#C9A043]">Servicios</a></li>
+            <li><a href="#nosotros" class="hover:text-[#C9A043]">Nosotros</a></li>
+            <li><a href="#contactos" class="hover:text-[#C9A043]">Contactos</a></li>
+        </ul>
+
+        <button id="btnLogin"
+            class="hidden md:block bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 rounded-lg font-semibold transition">
+            Iniciar Sesión
+        </button>
+
+        <!-- BOTÓN MÓVIL -->
+        <button id="btnMenu" class="md:hidden text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- MENÚ MÓVIL -->
+    <nav id="contenedorMenu"
+         class="hidden flex-col bg-[#031926]/95 backdrop-blur-md border-t border-gray-700 p-6 md:hidden transition-all duration-300">
+        <ul class="text-white flex flex-col space-y-4">
+            <li><a href="#servicios" class="">Servicios</a></li>
+            <li><a href="#nosotros" class="">Nosotros</a></li>
+            <li><a href="#contactos" class="">Contactos</a></li>
+        </ul>
+
+        <button id="btnLoginMobile" class="mt-5 bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 rounded-lg font-semibold transition">
+            Iniciar Sesión
+        </button>
+    </nav>
+</header>
+
     <main>
         <section class=" bg-[#070a10] py-24 text-center" id="inicio">
             <div class="max-w-4xl mx-auto px-8">
