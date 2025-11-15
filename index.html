@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="./assets/js/main.js"></script>
 </head>
+
 <body class="bg-white font-inter">
     <header class="bg-[#031926]/90 backdrop-blur-md shadow-md sticky top-0 z-50  ">
         <nav class="flex justify-between items-center h-16 px-8 md:px-16">
@@ -22,9 +23,24 @@
                 <li><a href="#nosotros" class="hover:text-[#C9A043]">Nosotros</a></li>
                 <li><a href="#contactos" class="hover:text-[#C9A043]">Contactos</a></li>
             </ul>
-            <button id="btnLogin" class="bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 border rounded-lg font-semibold transition">
+            <button id="btnLogin"
+                class="hidden md:block bg-[#C9A043] hover:bg-[#ae8b3a] px-6 py-2 border rounded-lg font-semibold transition">
                 Iniciar Sesión
             </button>
+            <button id="btnMenu" class="md:hidden text-white text-3xl">
+                ☰
+            </button>
+        </nav>
+
+        <nav id="contenedorMenu" class="hidden sm:hidden z-82  flex-col border border-gray-800 p-5">
+            <a href="#" class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Inicio</a>
+            <a href="#"
+                class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Características</a>
+            <a href="#"
+                class="text-gray-600 hover:text-indigo-600 py-2 font-medium transition duration-300">Documentación</a>
+            <a href="#"
+                class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">Comprar
+                Ahora</a>
         </nav>
     </header>
     <main>
@@ -130,7 +146,7 @@
                     </h2>
                     <p class="text-xl text-gray-600">Soluciones modulares diseñadas para tu madurez de seguridad</p>
                 </div>
-                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" >
+                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <article
                         class="h-60 border border-t-4 border-t-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 flex flex-col">
                         <h2 class="mb-4 font-semibold text-xl">Test de Penetración</h2>
@@ -195,7 +211,7 @@
             </div>
         </section>
     </main>
-    <footer id="contactos" class="bg-[#111827] text-white py-16" >
+    <footer id="contactos" class="bg-[#111827] text-white py-16">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
                 <section>
@@ -214,7 +230,7 @@
                         Suscríbete a nuestro boletín para recibir alertas de vulnerabilidades críticas y noticias de
                         seguridad.
                     </p>
-                    <form class="flex gap-2">
+                    <form class="flex gap-2" id="suscripcion">
                         <input type="email" placeholder="Tu email" required
                             class="flex-1 px-4 py-2 rounded-lg text-black">
                         <button type="submit"

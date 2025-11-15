@@ -64,3 +64,13 @@ document.getElementById("btnLogin").addEventListener("click", async () => {
 
 })
 
+//Funcion para mostrar mensaje de validación y mensaje de éxito del botón suscribir
+document.getElementById("suscripcion").addEventListener("click" , async() =>{
+            Swal.fire({
+            icon: 'success',
+            title: '¡Listo!',
+            text: 'Usted se ha suscripto correctamente'
+        });
+});
+
+//función que oculta el botón movil
